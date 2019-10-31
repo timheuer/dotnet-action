@@ -11,6 +11,6 @@ LABEL com.github.actions.color="blue"
 
 COPY LICENSE README.md /
 COPY dotnetaction.dll /dotnetaction.dll
-COPY dotnetaction.exe /dotnetaction.exe
+COPY dotnetaction.runtimeconfig.json /dotnetaction.runtimeconfig.json
 
-ENTRYPOINT [ "/dotnetaction.exe" ]
+ENTRYPOINT [ "dotnet","/dotnetaction.dll" ]
