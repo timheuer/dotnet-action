@@ -1,0 +1,13 @@
+name: Hello World
+on: 
+  issues:
+    types: [edited,labeled]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: NETCore
+      uses: ./
+      env:
+        STATUS_MESSAGE: "Tim Heuer -- yay! 🎉"
