@@ -10,4 +10,4 @@ jobs:
     - name: NETCore
       uses: ./
       env:
-        STATUS_MESSAGE: "Tim Heuer -- yay! 🎉"
+        STATUS_MESSAGE: "this is a message fired from a GitHub Action 🎉 💯"
