@@ -10,6 +10,7 @@ LABEL com.github.actions.icon="mail"
 LABEL com.github.actions.color="blue"
 
 COPY LICENSE README.md /
+COPY dotnetaction.dll /dotnetaction.dll
 COPY dotnetaction.exe /dotnetaction.exe
 
 ENTRYPOINT [ "/dotnetaction.exe" ]
